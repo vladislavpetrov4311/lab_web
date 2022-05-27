@@ -98,18 +98,3 @@ footer .sitemap {
 .faq h1{
 	font-size: 25px;
 }
-
-.tabs a span {
-	color: black;
-	display: inline-block; 
-	border-radius: 5px 5px 0 0; 
-	width: 120px; 
-	margin-right: 10px; 
-	text-align: center; 
-	background: #ccc; 
-	padding: 8px;
-}
-
-.tabs a span.active { 
-	background: #eee; 
-}
