@@ -6,7 +6,7 @@
 body {
 	background: #f9e933; 
 	font-family: 'Droid sans';
-	font-size: 115%;
+	font-size: 110%;
 }
 
 a {
@@ -111,15 +111,17 @@ footer .sitemap {
 }
 
 .content {
+	margin-top: -10px;
 	background: white;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 }
 
 .content li{
 	list-style: none;
-	margin:  15px;
+	margin: 13px;
 	padding-left: 5px;
-	box-shadow: 0 0 0 3px #ddd;
+	padding: 3px;
+	border-bottom: 3px solid black;
 }
 
 .content input {
@@ -132,12 +134,12 @@ footer .sitemap {
   	font-weight: 400;
   	line-height: 1.5;
   	color: black;
-  	background-color: #fff;
+  	/*background-color: #fff;*/
   	background-clip: padding-box;
   	border: 1px solid #bdbdbd;
   	border-radius: 0.25rem;
   	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  	margin: 3px 0;
+  	margin-top: 10px;
 }
 .content button {
 	appearance: none;
@@ -151,4 +153,14 @@ footer .sitemap {
 
 .sitemap li {
 	list-style: none;
+}
+
+main .content{
+	background-color: white;
+}
+
+main .content h3{
+	text-transform: uppercase;
+	padding: 7px;
+	background-color: #b7b7b7;
 }
