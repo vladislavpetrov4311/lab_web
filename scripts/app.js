@@ -39,7 +39,6 @@ $(".tabs a span").toArray().forEach(function (element) {
 					$('.inp').val("");
 				}
 			})
-		
 		}
 		return false;
 	})
