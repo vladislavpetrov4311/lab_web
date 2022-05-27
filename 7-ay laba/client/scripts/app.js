@@ -86,13 +86,21 @@ var main = function (toDoObjects) {
 					$button = $("<button>").text("Добавить");
 					$button.on("click", function () {
 						var description = $input.val(),
-						// разделение в соответствии с запятыми
-						tags = $tagInput.val().split(","); 
-						toDoObjects.push({"description":description, "tags":tags}); 
+						tags = $tagInput.val().split(",");
+						toDoObjects.push({"description":description, "tags":tags});
+						// здесь мы отправляем быстрое сообщение на маршрут списка задач
+						$.post("todos", {}, function (response) {
+							// этот обратный вызов выполняется при ответе сервера
+							console.log("Мы отправили данные и получили ответ сервера!");
+							console.log(response);
+						
+						});
+
 						// обновление toDos
 						toDos = toDoObjects.map(function (toDo) {
 							return toDo.description;
 						});
+
 						$input.val("");
 						$tagInput.val("");
 					});
@@ -104,10 +112,8 @@ var main = function (toDoObjects) {
 	$(".tabs a:first-child span").trigger("click");
 	})
 };	
-
-$(document).ready(function () {
+$(document).ready(function() {
 	$.getJSON("todos.json", function (toDoObjects) {
-	// вызов функции main с аргументом в виде объекта toDoObjects 
 		main(toDoObjects);
 	});
 });
