@@ -1,10 +1,10 @@
 body {
 	background: #f9e933; 
 	font-family: 'Droid sans';
-	font-size: 100%;
+	font-size: 115%;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: red;
 }
@@ -24,25 +24,30 @@ header, main, footer {
 }
 
 header .container, main .container, footer .container { 
-	max-width: 855px;
+	max-width: 1100px;
 	margin: auto;
 }
 
 header { 
 	background: white; 
 	overflow: auto;
+	margin-bottom: 3px;
+	padding: 10px;
 }
 header h1 {
+	font-size: 35px;
 	float: left;
 	width: 570px;
 }
 header nav {
 	float: right;
 	width: 285px;
+	margin-top: 7px;
 }
 main { 
 	background: white; 
 	overflow: auto;
+	padding: 20px;
 }
 main .main_block {
 	float: left;
@@ -51,6 +56,16 @@ main .main_block {
 main .image {
 	float: right;	
 	width: 285px;
+}
+
+main .faq {
+	float: left;
+	width: 855px;
+}
+
+main .faq p {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 main h2 {
@@ -70,6 +85,7 @@ footer {
 }
 
 footer .contact {
+	opacity: 0.8;
 	float: left;
 	width: 570px;
 }
@@ -77,4 +93,8 @@ footer .contact {
 footer .sitemap {
 	float: right;	
 	width: 285px;
+}
+
+.faq h1{
+	font-size: 25px;
 }
